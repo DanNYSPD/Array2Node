@@ -90,7 +90,7 @@ class Array2XML {
 
     private static function addAttributeNS(DOMDocument $xml,DOMElement $node,array $attrNs){
         foreach ($attrNs as $attr) {
-            echo \implode(",",[$attr['url'],$attr['name'],$attr['value']])."\n";
+            #echo \implode(",",[$attr['url'],$attr['name'],$attr['value']])."\n";
             $node->setAttributeNS($attr['url'],$attr['name'],$attr['value']);
          // $xml->createAttributeNS( '{namespace_uri_here}', 'example:attr' );
            # $xml->appendChild(
